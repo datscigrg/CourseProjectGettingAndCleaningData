@@ -11,18 +11,7 @@ This repository contains the course project for the Coursera course [Getting and
  
  
  
- 
- 
- ```
-    ├── UCI HAR Dataset
-    │   ├── README.txt
-    │   ├── activity_labels.txt
-    │   ├── features.txt
-    │   ├── features_info.txt
-    │   ├── test
-    │   └── train
-    └── run_analysis.R
-```
+
 
 ## Dependencies
 There are dependencies of the script `run_analysis.R` on the library `reshape`. Please install this package if you want to run the analysis on your own.
