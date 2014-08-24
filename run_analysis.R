@@ -49,5 +49,5 @@ write.table(CompleteAndCleanData, "merged_data.txt")
 # step 5 create tidy data set using functions of the reshape package
 res <- melt(CompleteAndCleanData,id.vars= c("subject","activity"))
 #tidy <- ddply(res, c("activity", "subject"), summarise, mean = mean(value))
-cast <- dcast(res, CompleteAndCleanData$subject,activity ~ variable, fun.aggregate=mean)
+cast <- dcast(res, CompleteAndCleanData$subject+activity ~ variable, fun.aggregate=mean)
 write.table( cast, file="tidy-data.csv",row.name=FALSE)
